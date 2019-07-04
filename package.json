@@ -31,7 +31,8 @@
     "koa-mount": "3.0.0",
     "koa-router": "7.3.0",
     "mongoose": "^5.5.2",
-    "promise.prototype.finally": "3.1.0"
+    "promise.prototype.finally": "3.1.0",
+    "systemd": "^0.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

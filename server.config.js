@@ -5,7 +5,8 @@ var json = require("./package.json")
 module.exports = {
   entry: {
     app: path.resolve(__dirname, "src/app.js"),
-    testData: path.resolve(__dirname, "src/db-init.js")
+    testData: path.resolve(__dirname, "src/db-init.js"),
+    socketApp: path.resolve(__dirname, "src/autoQuit.js")
     //main: ["babel-polyfill", "./src/main.js"],
     //testData: path.resolve(__dirname, 'src/getTest/index.js')
     //polyfill: "babel-polyfill"
