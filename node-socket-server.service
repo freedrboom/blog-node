@@ -3,6 +3,7 @@ Description=node server
 
 [Service]
 ExecStart=/usr/bin/node /opt/node/test/socketApp.js
+Restart=always
 User=weigu
 Group=weigu
 Environment=PATH=/usr/bin:/usr/local/bin

@@ -1,3 +1,4 @@
+// 生产随机测试数据所用
 import "babel-polyfill"
 import { User, Tag, Article, Comment } from "./mongoose/proxy"
 import connectMongoose from "./mongoose/connect_mongodb"

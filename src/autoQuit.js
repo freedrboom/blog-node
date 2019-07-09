@@ -1,9 +1,6 @@
 require("systemd")
-
-var net = require('net');
-
-var Server = net.Server;
-Server.prototype.autoQuit = function (options) {
+// autoquit npm 包在koa里用有些问题　便把源码拷过来了　改了下，　下面不是自己写的
+var autoQuit = function (options) {
     var self = this;
 
     options = options || {};
@@ -120,7 +117,7 @@ export default connectMongoose
   .use(graphqlMounted)
   .use(router.routes())
   .use(router.allowedMethods())
-  Server.prototype.autoQuit.call(app,{timeOut: 60})
+  autoQuit.call(app,{timeOut: 60})
   app.listen('systemd')
 })
 .catch(e => process.exit())
