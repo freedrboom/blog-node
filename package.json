@@ -4,10 +4,10 @@
   "description": "the backstage for blog",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --config=server.config.js",
+    "dev-server": "nodemon --inspect-brk ./src/index.js localhost 3000",
     "build": "webpack --config=server.config.js",
-    "db": "node -r esm src/db-run.js",
-    "dev": "node -r esm src/index.js"
+    "debug": "nodemon --inspect ./src/index.js",
+    "db": "node -r esm src/db-run.js"
   },
   "keywords": [
     "koa",
@@ -39,6 +39,7 @@
     "@babel/preset-env": "^7.4.4",
     "babel-loader": "^8.0.5",
     "eslint": "^4.19.1",
+    "nodemon": "^1.19.1",
     "serve": "^6.5.3",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.2",

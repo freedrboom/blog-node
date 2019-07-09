@@ -37,5 +37,5 @@ module.exports = {
       }
     ]
   },
-  mode: "development" //production development
+  mode: "production" //production development
 }
